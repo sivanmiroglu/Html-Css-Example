@@ -1,0 +1,66 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: url(bg.jpg);
+	background-size: cover; /* Arka plan resmi ortalar */
+}
+
+.box{
+	width: 450px;
+	background: #6b5858;
+	padding: 40px;
+	text-align: center;
+	margin: auto;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	color: #fff;
+	font-family: sans-serif;
+}
+
+.box img{
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	transition: 0.5s;/* hover Geçiş efekti süresi*/
+	cursor: pointer;/*imleç üstüne gelince değişir*/
+}
+
+.box img:hover{
+	transform: scale(0.9);/*İmleç üstüne gelince içe dogru yaklaşma olur*/
+}
+
+.box h1{
+	font-size: 40px;
+	letter-spacing: 4px;/*Harfler arası boşluk*/
+	font-weight: 100;/*Yazı Kalınlığı*/
+}
+
+.box h5{
+	font-size: 20px;
+	font-weight: 100;
+	letter-spacing: 3px;
+}
+
+.box p{
+	text-align: justify;/*Yazıyı iki yana yaslar*/
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+.box li{
+	display: inline-block;/*Yanyana sıralar*/
+	margin: 6px;
+	list-style: none;
+}
+
+.box li a{
+	color: white;
+	font-size: 60px;
+	transition: all ease-in-out 250ms;/*Hepsinde geçerli hover efekti*/
+}
+
+.box li a:hover{
+	color: #b9b9b9;
+}
