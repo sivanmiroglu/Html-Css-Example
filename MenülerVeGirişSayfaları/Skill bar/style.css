@@ -1,0 +1,72 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.skills{
+	width: 100%;
+	max-width: 600px;
+	padding: 0 20px;
+}
+.skill{
+	margin: 75px 0;
+}
+.skill__name{
+	font-family: 'Segoe UI';
+	font-size: 20px;
+	font-weight: bolder;
+	color: #1c1d1c;
+	margin: 20px 0;
+}
+.skill__bar,
+.skill__percent{
+	height: 15px;
+	border-radius: 8px;
+}
+.skill__bar{
+	background-color: #d5d5d5;
+}
+.skill__percent{
+	font-family: 'Segoe UI';
+	background-color: #ff503f;
+	position: relative;
+	animation: full 3s ease;
+}
+.skill__percent:before{
+	content: att,(percent);
+	position: absolute;
+	padding: 5px 8px;
+	background-color: #1c1d1c;
+	color: #fafaf9;
+	border-radius: 5px;
+	font-size: 14px;
+	top: -40px;
+	right: 0;
+	transform: translate(50%);
+}
+.skill__percent:after{
+	content: "";
+	width: 15px;
+	height: 10px;
+	background-color: #1c1d1c;
+	color: #fafaf9;
+	position: absolute;
+	top: -12px;
+	right: 0;
+	transform: translate(50%);
+	clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+@keyfroms fill{
+	from{
+		width: 0;
+	}
+	top{
+		width: 100%;
+	}
+}

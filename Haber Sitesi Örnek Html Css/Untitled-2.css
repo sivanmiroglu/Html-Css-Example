@@ -1,0 +1,389 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#AnaDiv {
+    width: 100%;
+    height: auto;
+}
+ <!--Hesaplar Ve İletişim Bilgilerinin Bulunduğu div-->
+  <!--Margin Kullanımı Margin:Üst Sağ Alt Sol;-->
+#Split {
+    color:white;
+    width: 100%;
+    height: 40px;
+    background-color: black;
+}
+
+    #Split .GörüsVeÖneri {
+		color:white;
+		background-color: black;
+        float: left;
+        width: 33.33%;
+        height: 100%;
+		
+    }
+
+        #Split .GörüsVeÖneri a {
+            line-height: 40px;      
+            text-decoration: none;  
+        }
+
+
+            #Split .GörüsVeÖneri a:hover {
+                text-decoration: none;
+                color: cadetblue;
+            }
+
+    #Split .Telefon {
+		color:white;
+		background-color: black;
+        text-align: center;
+        float: left;
+        width: 33.33%;
+        height: 100%;
+    }
+
+        #Split .Telefon a {
+            line-height: 40px;
+            text-decoration: none;
+        }
+
+            #Split .Telefon a:hover {
+                text-decoration: none;
+                color: cadetblue;
+            }
+
+    #Split .Hesaplar {
+		color:white;
+		background-color: black;
+        float: left;
+        width: 33.33%;
+  	    height: 40px;
+    }
+
+        #Split .Hesaplar .fa {
+            float: right;
+            border-radius: 50%;
+            padding: 8px;
+            font-size: 20px;
+            width: 35px;
+            height: 33px;
+            text-align: center;
+            text-decoration: none;
+            margin: 3px 1.5% auto 0px;
+        }
+
+        #Split .Hesaplar .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+            #Split .Hesaplar .fa-facebook:hover {
+                background-color: white;
+                color: black;
+            }
+
+        #Split .Hesaplar .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+            #Split .Hesaplar .fa-twitter:hover {
+                background-color: white;
+                color: black;
+            }
+
+        #Split .Hesaplar .fa-google {
+            background: #dd4b39;
+            color: white;
+        }
+
+            #Split .Hesaplar .fa-google:hover {
+                background-color: white;
+                color: black;
+            }
+
+        #Split .Hesaplar .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+
+            #Split .Hesaplar .fa-instagram:hover {
+                background-color: white;
+                color: black;
+            }
+
+#MenüDiv {
+    float: left;
+    padding: 0px;
+    width: 100%;
+    height: 70px;
+}
+
+    #MenüDiv .Logo {
+        float: left;
+        width: 20%;
+        height: 100%;
+    }
+
+        #MenüDiv .Logo img {
+            width: 100%;
+            height: 100%;
+        }
+
+    #MenüDiv .Menü {
+        width: 80%;
+        height: 70px;
+        float: left;
+    }
+
+        #MenüDiv .Menü ul {
+            float: right;
+            width: 100%;
+        }
+
+            #MenüDiv .Menü ul li {
+                float: left;
+                border-left: 1px solid black;
+                text-align: center;
+                margin-top: 10px;
+                width: 20%;
+                list-style-type: none;
+            }
+
+                #MenüDiv .Menü ul li a {
+                    text-decoration: none
+                }
+
+                #MenüDiv .Menü ul li:hover {
+                    color: red;
+                }
+
+#OrtaDiv {
+    float: left;
+    width: 100%;
+    height: 400px;
+}
+
+    #OrtaDiv .Kategoriler {
+        color: white;
+        float: left;
+        width: 20%;
+        height: 100%;
+        background-color: black;
+    }
+
+
+
+        #OrtaDiv .Kategoriler ul {
+            width: 100%;
+            float: left;
+        }
+
+            #OrtaDiv .Kategoriler ul li {
+                line-height: 40px;
+                text-align: center;
+                margin: 10px 20% auto auto;
+                width: 80%;
+                height: 45px;
+                background-color: black;
+                list-style-type: none;
+            }
+
+                #OrtaDiv .Kategoriler ul li a {
+                    text-decoration: none
+                }
+
+                #OrtaDiv .Kategoriler ul li:hover {
+                    background-color: white;
+                    color: black;
+                }
+
+    #OrtaDiv .Slaytlar {
+        float: left;
+        width: 80%;
+        height: 100%;
+    }
+
+#slider-wrapper {
+    width: 100%;
+    height: 100%;
+    margin: auto auto;
+    position: relative;
+    margin-bottom: 0px;  
+    overflow: hidden;
+}
+/*Position Absolute Yuvarlak Butonları Resim Üzerinde Konumlandırır.*/
+#s1 {
+    border:2px solid white;
+    padding: 8px;
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    margin-left: -36px;
+    border-radius: 20px;
+    opacity: 1;
+    cursor: pointer;
+    z-index: 999;
+}
+/* Z index Yuvarlak Butonların Resmin Üstüne Geçmesini sağlar*/
+#s2 {
+    border: 2px solid white;
+    padding: 8px;
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    margin-left: -12px;
+    border-radius: 20px;
+    opacity: 1;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#s3 {
+    border: 2px solid white;
+    padding: 8px;
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    margin-left: 12px;
+    border-radius: 20px;
+    opacity: 1;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#s4 {
+    border: 2px solid white;
+    padding: 8px;
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    margin-left: 36px;
+    border-radius: 20px;
+    opacity: 1;
+    cursor: pointer;
+    z-index: 999;
+}
+
+
+    #s1:hover,
+    #s2:hover,
+    #s3:hover,
+    #s4:hover {
+       
+        padding:6px;
+        background-color:white;
+    }
+/*Overflow:Hidden; 4 Resimden üçünün Gizlenmesini Sağlıyor*/
+.inner-wrapper {
+    width: 1220px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: 0px;
+    overflow: hidden;
+}
+
+#Slide1:checked ~ .overflow-wrapper {
+    margin-left: 0%;
+}
+
+#Slide2:checked ~ .overflow-wrapper {
+    margin-left: -100%;
+}
+
+#Slide3:checked ~ .overflow-wrapper {
+    margin-left: -200%;
+}
+
+#Slide4:checked ~ .overflow-wrapper {
+    margin-left: -300%;
+}
+
+#Slide1:checked + #s1 {
+    padding: 6px;
+    background-color: white;
+}
+
+#Slide2:checked + #s2 {
+    padding: 6px;
+    background-color: white;
+}
+
+#Slide3:checked + #s3 {
+    padding: 6px;
+    background-color: white;
+}
+
+#Slide4:checked + #s4 {
+    padding: 6px;
+    background-color: white;
+}
+
+.overflow-wrapper {
+    width: 400%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    z-index: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.slide img {
+    width: 25%;
+    float: left;
+}
+
+
+#İcerik {
+    padding-top: 30px;
+    float: left;
+    width: 100%;
+    height: 400px;
+    background-color: white;
+}
+
+    #İcerik .haber {
+        background-color: gray;
+        margin: auto auto 50px 4%;
+        float: left;
+        width: 20%;
+        height: 300px;
+    }
+
+        #İcerik .haber img {
+            width: 100%;
+            height: 200px;
+        }
+        #İcerik .haber img:hover {
+            margin:10px auto auto 10%;
+            width: 80%;
+        }
+
+        #İcerik .haber p {
+            color:white;
+            margin-left: 5%;
+            width: 90%;
+            height: auto;
+        }
+
+#AltMenü {
+    color:white;
+    text-align: center;
+    float: left;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
